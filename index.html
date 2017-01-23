@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body {
+                max-width: 500px;
+                margin: 16px auto;
+            }
+
+            div[draggable] {
+                border: 1px solid #cecece;
+            }
+
+            div[contenteditable] {
+                /* Since we include Safari user-select,
+                 * include the rest too */
+
+                -moz-user-select: text;
+                /* -webkit is fix for Safari */
+                -webkit-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+
+                border: 1px solid #cecece;
+                margin: 16px;
+                min-height: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div draggable="true">
+            <div contenteditable="true"></div>
+        </div>
+
+    </body>
+</html>
