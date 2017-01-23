@@ -7,3 +7,5 @@ Firefox specific bug when using [contenteditable] with [draggable]
 2. Enter text into the contenteditable div.
 3. Click off of the contenteditable div to have it lose focus.
 4. Click back into the contenteditable div and observe the cursor position compared to where you clicked.
+
+Track the bug report at https://bugzilla.mozilla.org/show_bug.cgi?id=1333127.
